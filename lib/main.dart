@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
   int index = 0;
   Future<String> fetch_data_from_api() async {
     var url =
-        "http://newsapi.org/v2/everything?q=tech&apiKey=";
+        "http://newsapi.org/v2/everything?q=tech&apiKey=16ef46380f8b40ba9b58ee9ff225ede6";
     var jsondata = await http.get(url);
     var fetchdata = jsonDecode(jsondata.body);
     setState(() {
